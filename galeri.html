@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri - SumutTour</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root{
+--mist-cream:#F8F5EE;
+--highland-gold:#D4AF37;
+--charcoal:#231F1C;
+--navbar:#0C2A36;
+---bs-body-font-family:'Work Sans',sans-serif;
+}
+/* Background Website */
+body{
+    background-color:var(--mist-cream);
+}
+
+/* Warna tulisan Sumut */
+.logo-sumut{
+    color:var(--highland-gold);
+    font-weight:bold;
+}
+.navbar-rimba{
+    background-color:var(--navbar);
+}
+
+.hero .carousel-item{
+    height: 500px;
+}
+
+.carousel-item img{
+    height:100%;
+    object-fit:cover;
+}
+
+.carousel-caption .container{
+    height:100%;
+    display:flex;
+    align-items:flex-end;      /* Teks di bawah */
+    justify-content:flex-start; /* Teks di kiri */
+    padding-bottom:50px;       /* Jarak dari bawah */
+    padding-left:40px;
+}
+.carousel-caption{
+    left:0;
+    right:0;
+    bottom:50px;
+    text-align:left;
+}
+
+.carousel-caption .row{
+    width:100%;
+}
+
+.carousel-caption h1{
+    font-size:4rem;
+    line-height:1.15;
+}
+
+.carousel-caption p{
+    font-size:1.35rem;
+    max-width:620px;
+}
+h1,h2,h3,h4,.display-font{
+    font-family:'Fraunces',serif;
+}
+.eyebrow{
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    font-size:.75rem;
+    font-weight:600;
+}
+main{padding-top:76px;
+}
+.hero{
+    padding:60px 0;
+    text-align:center;
+}
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+.card:hover{
+    transform:translateY(-5px);
+    transition:.3s
+}
+
+.card-img-top{
+height:250px;
+object-fit:cover;
+}
+
+.footer-charcoal{
+    background-color: var(--charcoal);
+}
+
+</style>
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark navbar-rimba fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+    🪷 <span class="logo-sumut">Sumut</span>Tour
+</a>
+
+              <button class="navbar-toggler"
+                      data-bs-toggle="collapse"
+                        data-bs-target="#menu">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="menu">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                      <li class="nav-item"><a class="nav-link active" href="destinasi.html">Destinasi</a></li>
+                      <li class="nav-item"><a class="nav-link" href="paket.html">Paket wisata</a>
+                            <a class="nav-link dropdown-toggle" href="detail.html" data-bs-toggle="dropdown">Destinasi</a>
+                     <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="detailairterjunlauberte.html">Air Terjun</a></li>
+                      <li><a class="dropdown-item" href="detaildanautoba.html">Danau</a></li>
+                      <li><a class="dropdown-item" href="detailgunungsibayak.html">Gunung</a></li>
+                      <li><a class="dropdown-item" href="detailpantaicermin.html">Pantai</a></li>
+                    </ul>
+                    <li class="nav-item"><a class="nav-link" href="paket.html">Paket Wisata</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimoni.html">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pemesanan.html">Pesan Sekarang</a></li>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+<!-- Carousel -->
+ <section class="hero">
+<div id="slider"
+class="carousel slide"
+data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+
+<img src="images/pemandangan4.jpg"
+class="d-block w-100">
+
+<div class="carousel-caption d-flex align-items-end h-100 text-start">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6 col-md-8">
+
+                <h6 class="text-uppercase text-warning fw-bold mb-3" style="letter-spacing:2px;">
+                    Jelajahi
+                </h6>
+
+                <h3 class="display-3 fw-bold text-white mb-4">
+                    Galeri Sumut
+                </h3>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!--gambar 1-->
+<div class="container"><div class="row g-4">
+<div class="col-md-4">
+<div class="card shadow-sm h-100">
+    <img src="images/galeri1.jpeg" class="card-img-top">
+        <div class="card-body text-center">
+    <h5>Danau Toba</h5>
+        <p>Destinasi wisata danau populer di Sumatera Utara.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#m0">Lihat Detail</button>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="m0">
+
+<div class="modal-dialog"><div class="modal-content">
+
+<div class="modal-header">
+    <h5 class="modal-title">Danau Toba</h5>
+    <button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+    <img src="images/galeri1.jpeg" class="img-fluid rounded mb-3">
+        <p>Danau Toba dengan beragam mitoss dan budaya nya menjadi salah satu 
+             tujuan wisata danau budaya favorit di Sumatera Utara.</p>
+             </div>
+        </div> 
+    </div>
+</div>
+
+<!--gambar2-->
+<div class="col-md-4">
+<div class="card shadow-sm h-100">
+
+<img src="images/galeri2.jpeg" class="card-img-top">
+<div class="card-body text-center">
+    <h5>Gunung Sibayak</h5>
+        <p>Destinasi wisata Pegunungan populer di Sumatera Utara.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#m1">Lihat Detail</button>
+        </div> 
+    </div>
+</div>
+<div class="modal fade" id="m1">
+<div class="modal-dialog"><div class="modal-content">
+<div class="modal-header">
+    <h5 class="modal-title">Gunung Sibayak</h5>
+    <button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+    <img src="images/galeri2.jpeg" class="img-fluid rounded mb-3">
+        <p>Gunung Sibayak menawarkan panorama alam yang
+             indah dan menjadi salah satu tujuan 
+            wisata favorit di Sumatera Utara.</p>
+            </div>
+         </div>
+    </div>
+</div>
+
+<!--gambar3-->
+<div class="col-md-4">
+<div class="card shadow-sm h-100">
+<img src="images/galeri3.jpeg" class="card-img-top">
+<div class="card-body text-center">
+    <h5>Pantai Cermin</h5>
+        <p>Destinasi wisata Pantai Pasir Putih populer di Sumatera Utara.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#m2">Lihat Detail</button>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="m2">
+<div class="modal-dialog"><div class="modal-content">
+<div class="modal-header">
+    <h5 class="modal-title">Pantai Cermin</h5>
+    <button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+    <img src="images/galeri3.jpeg" class="img-fluid rounded mb-3">
+        <p>Pantai Cermin menawarkan panorama alam yang indah Beserta flora dan
+             fauna lautnya yang unik
+            menjadi salah satu tujuan wisata laut
+             favorit di Sumatera Utara.</p>
+             </div>
+         </div>
+    </div>
+</div>
+
+<!--gambar4-->
+<div class="col-md-4">
+<div class="card shadow-sm h-100">
+<img src="images/galeri4.jpeg" class="card-img-top">
+<div class="card-body text-center">
+    <h5>Air Terjun Lau-Berte</h5>
+        <p>Destinasi wisata Air Terjun populer di Sumatera Utara.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#m3">Lihat Detail</button>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="m3">
+<div class="modal-dialog"><div class="modal-content">
+<div class="modal-header">
+    <h5 class="modal-title">Air Terjun Lau-Berte</h5>
+    <button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+    <img src="images/galeri4.jpeg" class="img-fluid rounded mb-3">
+        <p>Gemuruh gumpalan air yang alami turun dari pegunungan menjadi salah satu
+             tujuan wisata Air Terjun
+             favorit di Sumatera Utara.</p>
+            </div>
+         </div>
+    </div>
+</div>
+
+<!--gambar5-->
+<div class="col-md-4">
+<div class="card shadow-sm h-100">
+<img src="images/galeri5.jpeg" class="card-img-top">
+<div class="card-body text-center">
+    <h5>Kota Medan</h5>
+        <p>Destinasi wisata populer di Sumatera Utara.</p>
+            <button class="btn btn-success" >Segera Hadir</button>
+        </div>
+    </div>
+</div>
+
+
+<!--gambar6-->
+<div class="col-md-4">
+<div class="card shadow-sm h-100">
+<img src="images/galeri6.jpeg" class="card-img-top">
+<div class="card-body text-center">
+    <h5>Salju Panas Raja</h5>
+        <p>Destinasi wisata populer di Sumatera Utara.</p>
+            <button class="btn btn-success"  >Segera Hadir</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- FOOTER -->
+<footer class="footer-charcoal text-white py-5 mt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h5 class="display-font"><span style="color:var(--highland-gold)">Sumut</span>Tour</h5>
+        <p class="text-white-50 small">Mempromosikan tentang alam dan budaya Sumatera Utara kepada dunia, dengan pariwisata yang bertanggung jawab dan berkelanjutan.</p>
+        <div class="d-flex gap-3 fs-5 mt-3">
+        <a href="https://facebook.com/nabil.alfahri.58" class="social-btn"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com/n4b.el" class="social-btn"><i class="bi bi-instagram"></i></a>
+        <a href="https://wa.me/+6288708508818" class="social-btn"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://tiktok.com/@nbel.alfahri" class="social-btn"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6 class="text-white mb-3">Jelajahi</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="beranda.html">Beranda</a></li>
+          <li class="mb-2"><a href="destinasi.html">Destinasi</a></li>
+          <li class="mb-2"><a href="paket.html">Paket Wisata</a></li>
+          <li class="mb-2"><a href="galeri.html">Galeri</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6 class="text-white mb-3">Bantuan</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="testimoni.html">Testimoni</a></li>
+          <li class="mb-2"><a href="pemesanan.html">Pemesanan</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+      </div>
+    </div>
+    <hr class="border-secondary my-4">
+    <p class="text-center text-white-50 small mb-0"> 2026 Sumatera Utara — (proyek tugas kuliah). Dibuat dengan 20+ Bootstrap .</p>
+  </div>
+  
+</footer>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
